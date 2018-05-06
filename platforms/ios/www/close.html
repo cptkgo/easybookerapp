@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Easybooker QR</title>
+
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8">
+
+            // Wait for device API libraries to load
+            //
+            document.addEventListener("deviceready", onDeviceReady, false);
+
+            // device APIs are available
+            //
+            function onDeviceReady() {
+                authk = window.location.hash.substr(1)
+                //alert('close: ' + authk);
+                if(authk.length == 150){
+                    // alert("authkey OK!");
+                    document.cookie = 'authkey=' + authk + '; expires=31 Dec 2030 23:59:59 GMT';
+                }
+                
+                var ref = window.open('https://napp.easybooker.be', '_blank', 'location=no,toolbar=no,closebuttoncaption=Sluiten,EnableViewPortScale=no');
+                ref.addEventListener("loadstart", function (event) {
+                    //alert(event.url);
+                    if (event.url == 'https://napp.easybooker.be/open/scanner') {
+                         window.location.replace('scanner.html#' + authk);
+                    }
+                    if (event.url == 'close.html') {
+                        ref.close();
+                    }
+                });
+                ref.addEventListener('loadstop', function (event) {});
+                ref.addEventListener('loaderror', function (event) {});
+                ref.addEventListener('exit', function (event) {});
+                var notificationOpenedCallback = function (jsonData) {
+                    console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+                };
+
+            }
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

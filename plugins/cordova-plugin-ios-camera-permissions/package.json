@@ -1,0 +1,68 @@
+{
+  "_from": "git+https://github.com/Cordobo/cordova-plugin-ios-camera-permissions.git",
+  "_id": "cordova-plugin-ios-camera-permissions@1.2.0",
+  "_inBundle": false,
+  "_location": "/cordova-plugin-ios-camera-permissions",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/Cordobo/cordova-plugin-ios-camera-permissions.git",
+    "rawSpec": "git+https://github.com/Cordobo/cordova-plugin-ios-camera-permissions.git",
+    "saveSpec": "git+https://github.com/Cordobo/cordova-plugin-ios-camera-permissions.git",
+    "fetchSpec": "https://github.com/Cordobo/cordova-plugin-ios-camera-permissions.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/Cordobo/cordova-plugin-ios-camera-permissions.git#c5d86e4d70f8266357b9aac57b794b0f03ec5157",
+  "_spec": "git+https://github.com/Cordobo/cordova-plugin-ios-camera-permissions.git",
+  "_where": "/Users/kgo/Desktop/easybooker/Easybooker 2",
+  "author": {
+    "name": "Andreas Jacob",
+    "email": "andreas@cordobo.de",
+    "url": "http://cordobo.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/cordobo/cordova-plugin-ios-camera-permissions/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-ios-camera-permissions",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova / PhoneGap Plugin Permission Settings for NSCameraUsageDescription, NSPhotoLibraryUsageDescription, NSPhotoLibraryAddUsageDescription and NSMicrophoneUsageDescription in iOS 11 by adding a declaration to the Info.plist file",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/cordobo/cordova-plugin-ios-camera-permissions#readme",
+  "keywords": [
+    "cordova",
+    "ios",
+    "ios10",
+    "ios11",
+    "app",
+    "security",
+    "permissions",
+    "nscamerausagedescription",
+    "nsphotolibraryaddusagedescription",
+    "nsphotolibraryusagedescription",
+    "nsmicrophoneusagedescription",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-ios-camera-permissions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cordobo/cordova-plugin-ios-camera-permissions.git"
+  },
+  "version": "1.2.0"
+}
